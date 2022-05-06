@@ -7,8 +7,8 @@ import {
 
 // as the actual value you want to access
 export const UserContext = createContext({
-  currentUser: null,
   setCurrentUser: () => null,
+  currentUser: null,
 });
 
 export const UserProvider = ({ children }) => {
@@ -20,7 +20,6 @@ export const UserProvider = ({ children }) => {
       if (user) {
         createUserDocumentFromAuth(user);
       }
-      console.log(user);
       setCurrentUser(user);
     });
 
