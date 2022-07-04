@@ -4,7 +4,7 @@ import {
   addItemToCart,
   removeItemFromCart,
   clearItemFromCart,
-} from "../../store/cart/cart.actions";
+} from "../../store/cart/cart.action";
 
 import { selectCartItems } from "../../store/cart/cart.selector";
 
